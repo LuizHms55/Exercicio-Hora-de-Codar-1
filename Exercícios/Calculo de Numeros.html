@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+function calcularAreaRetangulo(base, altura) {
+    return base * altura;
+}
+
+// Função para calcular a área do quadrado
+function calcularAreaQuadrado(lado) {
+    return lado * lado;
+}
+
+// Função para calcular a área do losango
+function calcularAreaLosango(diagonalMaior, diagonalMenor) {
+    return (diagonalMaior * diagonalMenor) / 2;
+}
+
+// Função para calcular a área do trapézio
+function calcularAreaTrapezio(baseMaior, baseMenor, altura) {
+    return ((baseMaior + baseMenor) * altura) / 2;
+}
+
+// Função para calcular a área do paralelogramo
+function calcularAreaParalelogramo(base, altura) {
+    return base * altura;
+}
+
+// Função para calcular a área do triângulo
+function calcularAreaTriangulo(base, altura) {
+    return (base * altura) / 2;
+}
+
+// Função para calcular a área do círculo
+function calcularAreaCirculo(raio) {
+    const pi = Math.PI;
+    return pi * raio * raio;
+}
+
+// Solicitar ao usuário os valores necessários para cada forma geométrica
+var base, altura, lado, lado2, diagonalMaior, diagonalMenor, baseMaior, baseMenor, raio;
+
+// Retângulo
+base = parseFloat(prompt("Digite a base do retângulo:"));
+altura = parseFloat(prompt("Digite a altura do retângulo:"));
+var areaRetangulo = calcularAreaRetangulo(base, altura);
+alert("A área do retângulo é: " + areaRetangulo);
+
+// Quadrado
+lado = parseFloat(prompt("Digite o lado do quadrado:"));
+var areaQuadrado = calcularAreaQuadrado(lado);
+alert("A área do quadrado é: " + areaQuadrado);
+
+// Losango
+diagonalMaior = parseFloat(prompt("Digite a diagonal maior do losango:"));
+diagonalMenor = parseFloat(prompt("Digite a diagonal menor do losango:"));
+var areaLosango = calcularAreaLosango(diagonalMaior, diagonalMenor);
+alert("A área do losango é: " + areaLosango);
+
+// Trapézio
+baseMaior = parseFloat(prompt("Digite a base maior do trapézio:"));
+baseMenor = parseFloat(prompt("Digite a base menor do trapézio:"));
+altura = parseFloat(prompt("Digite a altura do trapézio:"));
+var areaTrapezio = calcularAreaTrapezio(baseMaior, baseMenor, altura);
+alert("A área do trapézio é: " + areaTrapezio);
+
+// Paralelogramo
+base = parseFloat(prompt("Digite a base do paralelogramo:"));
+altura = parseFloat(prompt("Digite a altura do paralelogramo:"));
+var areaParalelogramo = calcularAreaParalelogramo(base, altura);
+alert("A área do paralelogramo é: " + areaParalelogramo);
+
+// Triângulo
+base = parseFloat(prompt("Digite a base do triângulo:"));
+altura = parseFloat(prompt("Digite a altura do triângulo:"));
+var areaTriangulo = calcularAreaTriangulo(base, altura);
+alert("A área do triângulo é: " + areaTriangulo);
+
+// Círculo
+raio = parseFloat(prompt("Digite o raio do círculo:"));
+var areaCirculo = calcularAreaCirculo(raio);
+alert("A área do círculo é: " + areaCirculo);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
